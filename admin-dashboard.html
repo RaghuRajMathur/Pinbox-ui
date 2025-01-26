@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Task Management</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+        <source src="../img/back.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="dashboard">
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <div class="logo">AdminTech</div>
+        <nav>
+          <a href="#" class="nav-item active">Dashboard</a>
+          <a href="#" class="nav-item">Task Management</a>
+          <a href="#" class="nav-item">Team Overview</a>
+          <a href="#" class="nav-item">Projects</a>
+          <a href="#" class="nav-item">Reports</a>
+          <a href="#" class="nav-item">Settings</a>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="welcome-banner">
+          <h2>Welcome, Admin!</h2>
+          <p>Manage your team and tasks efficiently.</p>
+          <a href="#" class="action-btn">Assign New Task</a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h4>Total Tasks</h4>
+            <div class="stat-value">127</div>
+          </div>
+          <div class="stat-card">
+            <h4>Completed Tasks</h4>
+            <div class="stat-value">89</div>
+          </div>
+          <div class="stat-card">
+            <h4>Team Members</h4>
+            <div class="stat-value">12</div>
+          </div>
+        </div>
+
+        <div class="task-management">
+          <h3>Task Management</h3>
+          <div class="task-list">
+            <div class="task-item">
+              <input type="checkbox" class="task-checkbox" id="task1" />
+              <div class="task-details">
+                <label for="task1" class="task-title"
+                  >Update company policies</label
+                >
+                <div class="task-assignee">Assigned to: John Doe</div>
+                <div class="task-due">Due: Today</div>
+              </div>
+            </div>
+            <div class="task-item">
+              <input type="checkbox" class="task-checkbox" id="task2" />
+              <div class="task-details">
+                <label for="task2" class="task-title"
+                  >Review Q3 financial reports</label
+                >
+                <div class="task-assignee">Assigned to: Jane Smith</div>
+                <div class="task-due">Due: Tomorrow</div>
+              </div>
+            </div>
+            <div class="task-item">
+              <input type="checkbox" class="task-checkbox" id="task3" />
+              <div class="task-details">
+                <label for="task3" class="task-title"
+                  >Prepare team performance reviews</label
+                >
+                <div class="task-assignee">Assigned to: You</div>
+                <div class="task-due">Due: Next week</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="right-sidebar">
+        <div class="calendar">
+          <div class="calendar-header">
+            <h3>January 2023</h3>
+            <div class="calendar-nav">
+              <span>←</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="calendar-grid">
+            <!-- Weekdays -->
+            <div class="calendar-weekday">M</div>
+            <div class="calendar-weekday">T</div>
+            <div class="calendar-weekday">W</div>
+            <div class="calendar-weekday">T</div>
+            <div class="calendar-weekday">F</div>
+            <div class="calendar-weekday">S</div>
+            <div class="calendar-weekday">S</div>
+
+            <!-- Days -->
+            <div class="calendar-date other-month">26</div>
+            <div class="calendar-date other-month">27</div>
+            <div class="calendar-date other-month">28</div>
+            <div class="calendar-date other-month">29</div>
+            <div class="calendar-date other-month">30</div>
+            <div class="calendar-date other-month">31</div>
+            <div class="calendar-date">1</div>
+
+            <div class="calendar-date">2</div>
+            <div class="calendar-date">3</div>
+            <div class="calendar-date">4</div>
+            <div class="calendar-date">5</div>
+            <div class="calendar-date">6</div>
+            <div class="calendar-date">7</div>
+            <div class="calendar-date">8</div>
+
+            <div class="calendar-date">9</div>
+            <div class="calendar-date">10</div>
+            <div class="calendar-date">11</div>
+            <div class="calendar-date">12</div>
+            <div class="calendar-date">13</div>
+            <div class="calendar-date">14</div>
+            <div class="calendar-date">15</div>
+
+            <div class="calendar-date">16</div>
+            <div class="calendar-date">17</div>
+            <div class="calendar-date selected">18</div>
+            <div class="calendar-date">19</div>
+            <div class="calendar-date">20</div>
+            <div class="calendar-date">21</div>
+            <div class="calendar-date">22</div>
+
+            <div class="calendar-date">23</div>
+            <div class="calendar-date">24</div>
+            <div class="calendar-date">25</div>
+            <div class="calendar-date today">26</div>
+            <div class="calendar-date">27</div>
+            <div class="calendar-date">28</div>
+            <div class="calendar-date">29</div>
+
+            <div class="calendar-date">30</div>
+            <div class="calendar-date">31</div>
+            <div class="calendar-date other-month">1</div>
+            <div class="calendar-date other-month">2</div>
+            <div class="calendar-date other-month">3</div>
+            <div class="calendar-date other-month">4</div>
+            <div class="calendar-date other-month">5</div>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <ul class="action-list">
+            <li class="action-item">
+              <a href="#" class="action-link">Create new project</a>
+            </li>
+            <li class="action-item">
+              <a href="#" class="action-link">Schedule team meeting</a>
+            </li>
+            <li class="action-item">
+              <a href="#" class="action-link">Generate monthly report</a>
+            </li>
+            <li class="action-item">
+              <a href="#" class="action-link">Review pending approvals</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team-overview">
+          <h3>Team Overview</h3>
+          <div class="team-member">
+            <div class="member-avatar">JD</div>
+            <div class="member-info">
+              <div class="member-name">John Doe</div>
+              <div class="member-role">Project Manager</div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">JS</div>
+            <div class="member-info">
+              <div class="member-name">Jane Smith</div>
+              <div class="member-role">Senior Developer</div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">MB</div>
+            <div class="member-info">
+              <div class="member-name">Mike Brown</div>
+              <div class="member-role">UI/UX Designer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

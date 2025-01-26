@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements</title>
+  <link rel="stylesheet" href="css/announcements.css">
+</head>
+<body>
+  <div class="announcements-container">
+    <div class="announcements-card">
+      <h1 class="title">Announcements</h1>
+      <p class="subtitle">Stay updated with the latest news and updates</p>
+      
+      <!-- Announcements List -->
+      <div class="announcements-list">
+        <div class="announcement">
+          <h2 class="announcement-title">Team Meeting</h2>
+          <p class="announcement-content">Don't forget our team meeting scheduled for tomorrow at 10 AM.</p>
+          <span class="announcement-date">24th January 2025</span>
+        </div>
+
+        <div class="announcement">
+          <h2 class="announcement-title">New Feature Release</h2>
+          <p class="announcement-content">We’re excited to announce the launch of the new dashboard analytics feature!</p>
+          <span class="announcement-date">22nd January 2025</span>
+        </div>
+      </div>
+
+      <!-- Back to Home Button -->
+      <button onclick="goHome()" class="back-btn">Back to Home</button>
+    </div>
+  </div>
+
+  <script>
+    // Redirect to the index page
+    function goHome() {
+      window.location.href = "index.html"; // Adjust the file path if necessary
+    }
+  </script>
+</body>
+</html>
